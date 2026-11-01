@@ -328,7 +328,7 @@ function tagtalkpage($title, $date, $diff, $result) {
 		}
 	}
 
-	if (!$C["test"]) {
+	if (empty($C["test"])) {
 		$res = cURL($C["wikiapi"], $post);
 	} else {
 		$res = false;
